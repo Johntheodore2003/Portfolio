@@ -1,0 +1,242 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+html, body{
+    height: 100%;
+    width: 100%;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+
+}
+/* Navbar */
+
+.nav-container{
+    height: 10vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 3rem;
+    color: #FEFCED;
+    font-size: 1em;
+    position: fixed;
+    z-index: 99;
+    /* background-color: #99BDFF; */
+}
+
+.nav-items{
+    display: flex;
+}
+
+.nav-container .nav-logo{
+    font-size: 2.5vh;
+}
+
+.nav-items-container {
+    margin-right: 2vh; 
+    padding: 1.75vh 2.5vh;
+
+}
+
+.nav-items-container:last-child {
+    margin-right: 0;
+}
+
+.nav-container .nav-contact{
+    padding: 1.65vh 2.5vh;
+    border-radius: 2rem;
+    border: #FEFCED solid 1px;
+    position: relative;
+    overflow: hidden;
+}
+
+.nav-contact #contact-slide{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-color: #FAF9F6;
+    top: 0; 
+    left:-100%;
+    transition: left 0.4s ease;
+}
+
+.nav-items-container h4{
+    font-weight: 400;
+}
+
+.nav-items-container:last-child h4{
+    font-weight: 400;
+    position: relative;
+    z-index: 99;
+}
+
+.nav-items-container:last-child:hover #contact-slide{
+    left: 0;
+}
+
+.nav-items-container:last-child:hover{
+    color: #99bdff;
+}
+
+/* Body */
+
+.main-container{
+    height: 100vh;
+    width: 100%;
+    background-color:#99bdff;
+    background-image:
+    radial-gradient(at 85% 52%, hsla(298,86%,72%,1) 0px, transparent 50%),
+    radial-gradient(at 24% 59%, hsla(19,82%,67%,1) 0px, transparent 50%);
+}
+
+.hero-container {
+    position: relative; /* Ensure positioning context for absolute positioning */
+    height: 100vh; /* Ensure full viewport height */
+}
+
+.hero-container .hero-name {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.hero-name h1{
+    font-family: "Danfo", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-variation-settings:
+      "ELSH" 0;
+
+    font-size: 6rem;
+    color: #FAF9F6;
+}
+
+.hero-container .hero-images{
+    height: 100vh;
+    width: 100%;
+}
+
+.hero-images .hero-img1{
+    height: 100vh;
+    width: 100%;
+    object-fit: cover;
+}
+
+/* Middle */
+.middle-container{
+    height: 100vh;
+    width: 100%;
+    /* background-color:bisque; */
+    display: flex; 
+    align-items: center;
+    justify-content: center;
+}
+
+.middle-main{
+    /* background-color: aqua; */
+    height: 70vh;
+    width: 80%;
+    padding: 5vh;
+
+}
+
+.middle-main .middle-top{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-bottom: 2vh;
+    border-bottom: #686868 solid 1px;
+}
+
+.middle-top .middle-lk-view{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+}
+
+.middle-lk-view img{
+    height: 3vh;
+    width: 3vh;
+}
+
+.main-h4-prop{
+    font-weight: 400;
+}
+
+.middle-bottom{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.middle-bottom .middle-about-left{
+    height: 100%;
+    width: 50%;
+    padding: 3.5vh 3vh 3.5vh 0 ;
+}
+
+.middle-about-left h4{
+    color: #686868;
+    margin-bottom: 2vh;
+    font-weight: 400;
+}
+
+.middle-about-left p{
+    font-size: 2vh;
+    color: #3F3F3F;
+    margin-bottom: 1.5vh;
+}
+
+.middle-bottom .middle-about-right{
+    height: 100%;
+    width: 50%;
+    padding: 3.5vh 2.5vh;
+
+}
+
+.middle-about-right h4{
+    color: #686868;
+    margin-bottom: 2vh;
+    font-weight: 400;
+
+}
+
+.middle-about-right p {
+    margin-bottom: 0.5vh;
+}
+
+.experience-p1{
+    color: #8F8F8F;
+    font-size: 1.7vh;
+}
+.experience-p2 span{ 
+    color: #5B5B5B;
+    font-size: 2vh;
+    margin-left: 1.5vh;
+}
+.experience-p3{
+    color: #3F3F3F;
+    font-size: 2vh;
+
+}
+
+.experience-container{
+    margin-bottom: 3vh;
+}
